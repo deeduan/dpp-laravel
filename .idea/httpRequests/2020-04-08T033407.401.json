@@ -1,0 +1,229 @@
+{
+  "code": 0,
+  "message": "success",
+  "data": {
+    "message": "Token has expired",
+    "exception": "Symfony\\Component\\HttpKernel\\Exception\\UnauthorizedHttpException",
+    "file": "/Users/dee/ubase/dpp/vendor/tymon/jwt-auth/src/Http/Middleware/BaseMiddleware.php",
+    "line": 74,
+    "trace": [
+      {
+        "file": "/Users/dee/ubase/dpp/vendor/tymon/jwt-auth/src/Http/Middleware/Authenticate.php",
+        "line": 30,
+        "function": "authenticate",
+        "class": "Tymon\\JWTAuth\\Http\\Middleware\\BaseMiddleware",
+        "type": "->"
+      },
+      {
+        "file": "/Users/dee/ubase/dpp/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+        "line": 167,
+        "function": "handle",
+        "class": "Tymon\\JWTAuth\\Http\\Middleware\\Authenticate",
+        "type": "->"
+      },
+      {
+        "file": "/Users/dee/ubase/dpp/app/Http/Middleware/ApiJsonResponse.php",
+        "line": 43,
+        "function": "Illuminate\\Pipeline\\{closure}",
+        "class": "Illuminate\\Pipeline\\Pipeline",
+        "type": "->"
+      },
+      {
+        "file": "/Users/dee/ubase/dpp/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+        "line": 167,
+        "function": "handle",
+        "class": "App\\Http\\Middleware\\ApiJsonResponse",
+        "type": "->"
+      },
+      {
+        "file": "/Users/dee/ubase/dpp/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php",
+        "line": 41,
+        "function": "Illuminate\\Pipeline\\{closure}",
+        "class": "Illuminate\\Pipeline\\Pipeline",
+        "type": "->"
+      },
+      {
+        "file": "/Users/dee/ubase/dpp/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+        "line": 167,
+        "function": "handle",
+        "class": "Illuminate\\Routing\\Middleware\\SubstituteBindings",
+        "type": "->"
+      },
+      {
+        "file": "/Users/dee/ubase/dpp/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php",
+        "line": 59,
+        "function": "Illuminate\\Pipeline\\{closure}",
+        "class": "Illuminate\\Pipeline\\Pipeline",
+        "type": "->"
+      },
+      {
+        "file": "/Users/dee/ubase/dpp/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+        "line": 167,
+        "function": "handle",
+        "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+        "type": "->"
+      },
+      {
+        "file": "/Users/dee/ubase/dpp/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+        "line": 103,
+        "function": "Illuminate\\Pipeline\\{closure}",
+        "class": "Illuminate\\Pipeline\\Pipeline",
+        "type": "->"
+      },
+      {
+        "file": "/Users/dee/ubase/dpp/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+        "line": 687,
+        "function": "then",
+        "class": "Illuminate\\Pipeline\\Pipeline",
+        "type": "->"
+      },
+      {
+        "file": "/Users/dee/ubase/dpp/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+        "line": 662,
+        "function": "runRouteWithinStack",
+        "class": "Illuminate\\Routing\\Router",
+        "type": "->"
+      },
+      {
+        "file": "/Users/dee/ubase/dpp/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+        "line": 628,
+        "function": "runRoute",
+        "class": "Illuminate\\Routing\\Router",
+        "type": "->"
+      },
+      {
+        "file": "/Users/dee/ubase/dpp/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+        "line": 617,
+        "function": "dispatchToRoute",
+        "class": "Illuminate\\Routing\\Router",
+        "type": "->"
+      },
+      {
+        "file": "/Users/dee/ubase/dpp/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php",
+        "line": 165,
+        "function": "dispatch",
+        "class": "Illuminate\\Routing\\Router",
+        "type": "->"
+      },
+      {
+        "file": "/Users/dee/ubase/dpp/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+        "line": 128,
+        "function": "Illuminate\\Foundation\\Http\\{closure}",
+        "class": "Illuminate\\Foundation\\Http\\Kernel",
+        "type": "->"
+      },
+      {
+        "file": "/Users/dee/ubase/dpp/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php",
+        "line": 21,
+        "function": "Illuminate\\Pipeline\\{closure}",
+        "class": "Illuminate\\Pipeline\\Pipeline",
+        "type": "->"
+      },
+      {
+        "file": "/Users/dee/ubase/dpp/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+        "line": 167,
+        "function": "handle",
+        "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+        "type": "->"
+      },
+      {
+        "file": "/Users/dee/ubase/dpp/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php",
+        "line": 21,
+        "function": "Illuminate\\Pipeline\\{closure}",
+        "class": "Illuminate\\Pipeline\\Pipeline",
+        "type": "->"
+      },
+      {
+        "file": "/Users/dee/ubase/dpp/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+        "line": 167,
+        "function": "handle",
+        "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+        "type": "->"
+      },
+      {
+        "file": "/Users/dee/ubase/dpp/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php",
+        "line": 27,
+        "function": "Illuminate\\Pipeline\\{closure}",
+        "class": "Illuminate\\Pipeline\\Pipeline",
+        "type": "->"
+      },
+      {
+        "file": "/Users/dee/ubase/dpp/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+        "line": 167,
+        "function": "handle",
+        "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
+        "type": "->"
+      },
+      {
+        "file": "/Users/dee/ubase/dpp/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php",
+        "line": 63,
+        "function": "Illuminate\\Pipeline\\{closure}",
+        "class": "Illuminate\\Pipeline\\Pipeline",
+        "type": "->"
+      },
+      {
+        "file": "/Users/dee/ubase/dpp/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+        "line": 167,
+        "function": "handle",
+        "class": "Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode",
+        "type": "->"
+      },
+      {
+        "file": "/Users/dee/ubase/dpp/vendor/fruitcake/laravel-cors/src/HandleCors.php",
+        "line": 36,
+        "function": "Illuminate\\Pipeline\\{closure}",
+        "class": "Illuminate\\Pipeline\\Pipeline",
+        "type": "->"
+      },
+      {
+        "file": "/Users/dee/ubase/dpp/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+        "line": 167,
+        "function": "handle",
+        "class": "Fruitcake\\Cors\\HandleCors",
+        "type": "->"
+      },
+      {
+        "file": "/Users/dee/ubase/dpp/vendor/fideloper/proxy/src/TrustProxies.php",
+        "line": 57,
+        "function": "Illuminate\\Pipeline\\{closure}",
+        "class": "Illuminate\\Pipeline\\Pipeline",
+        "type": "->"
+      },
+      {
+        "file": "/Users/dee/ubase/dpp/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+        "line": 167,
+        "function": "handle",
+        "class": "Fideloper\\Proxy\\TrustProxies",
+        "type": "->"
+      },
+      {
+        "file": "/Users/dee/ubase/dpp/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+        "line": 103,
+        "function": "Illuminate\\Pipeline\\{closure}",
+        "class": "Illuminate\\Pipeline\\Pipeline",
+        "type": "->"
+      },
+      {
+        "file": "/Users/dee/ubase/dpp/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php",
+        "line": 140,
+        "function": "then",
+        "class": "Illuminate\\Pipeline\\Pipeline",
+        "type": "->"
+      },
+      {
+        "file": "/Users/dee/ubase/dpp/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php",
+        "line": 109,
+        "function": "sendRequestThroughRouter",
+        "class": "Illuminate\\Foundation\\Http\\Kernel",
+        "type": "->"
+      },
+      {
+        "file": "/Users/dee/ubase/dpp/public/index.php",
+        "line": 55,
+        "function": "handle",
+        "class": "Illuminate\\Foundation\\Http\\Kernel",
+        "type": "->"
+      }
+    ]
+  }
+}
